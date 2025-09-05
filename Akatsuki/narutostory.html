@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation with Line</title>
+    <link rel="stylesheet" href="narutostory.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+      <nav>
+        <div class="logo"><img class="logo" src="narutopng.png" alt=""></div>
+    <ul class="nav-links">
+      <li><a href="character.html" class="nav-item">Characters</a></li>
+      <li><a href="#" class="nav-item">Events</a></li>
+      <li><a href="contact.html" class="nav-item">Contact</a></li>
+    </ul>
+    </nav>
+
+   <div class="section1 timeline">
+    <section class="timeline boruto">
+        <div class="borutohead">Boruto's Story</div>
+        <div class="borutostory">The story of a young boy who dreams of becoming
+                      Hokage is passed on to a new generation!
+                      See how the world of NARUTO has changed
+                      over the years!!
+        </div>
+        <div class="image-boruto">
+            Boruto's Story<svg style="position: absolute; left:85%; top:17px"  width="26" height="7" viewBox="0 0 26 7" class="section2icon"><path d="M16.172,7,26,3.412,16.213,0l-4,2.66H5.692A2.913,2.913,0,0,0,2.912.527,2.942,2.942,0,0,0,0,3.5,2.942,2.942,0,0,0,2.912,6.473,2.913,2.913,0,0,0,5.692,4.34h6.431ZM2.912,4.792a1.293,1.293,0,0,1,0-2.584,1.293,1.293,0,0,1,0,2.584"></path></svg>
+        </div>
+    </section>
+    <section class="narutobox timeline-item">
+        <h1 class="narutoboxhead">NARUTO'S STORY!</h1>
+        <P class="narutoboxdescribe">From its debut in 1999, all the way to its stunning conclusion—
+           look back on the trials and tribulations of an outcast
+           ninja’s coming of age and the famous scenes that
+           shaped his story!!
+        </P>
+        <img class="narutoboximg" src="https://naruto-official.com/about/story/mark.svg" alt="">
+    </section>
+    <section class="section1999">
+        <img class="imagemain1999" src="https://naruto-official.com/about/story/naruto.webp" alt="">
+        <div class="section1999head"><img src="https://naruto-official.com/about/story/naruto/01/year_1999.svg" alt=""></div>
+        <img class="NARUTO01" src="https://naruto-official.com/about/story/en/naruto/01/title_01.svg" alt="">
+        <section class="section1-content">
+        <img class="section1-img1" src="https://naruto-official.com/about/story/en/naruto/01/cell_c.webp" alt="">
+        <img class="section1-img2" src="https://naruto-official.com/about/story/en/naruto/01/cell_b.webp" alt="">
+        <img class="section1-img3" src="https://naruto-official.com/about/story/en/naruto/01/cell_a.webp" alt="">
+        <section class="sectionlate">
+        <img class="section1-img4" src="https://naruto-official.com/about/story/en/naruto/01/cell_e.webp" alt="">
+        <img class="section1-img5" src="https://naruto-official.com/about/story/en/naruto/01/cell_f.webp" alt="">
+        <img class="section1-img6" src="https://naruto-official.com/about/story/en/naruto/01/cell_d.webp" alt="">
+        <img class="section1-img7" src="https://naruto-official.com/about/story/en/naruto/01/cell_g.webp" alt="">
+        </section>
+        </section>
+    </section>
+   </div>
+
+    <script >
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        }
+    });
+}, { threshold: 0.05 }); // Trigger when 50% of the element is visible
+
+document.querySelectorAll('.sectionlate').forEach((el) => {
+    observer.observe(el);
+});
+document.querySelectorAll('.section1-img5').forEach((el) => {
+    observer.observe(el);
+});
+document.querySelectorAll('.section1-img6').forEach((el) => {
+    observer.observe(el);
+});
+document.querySelectorAll('.section1-img7').forEach((el) => {
+    observer.observe(el);
+});
+
+        document.addEventListener("DOMContentLoaded", function() {
+    // Select all the elements you want to animate
+    const timelineItems = document.querySelectorAll(".timeline-item");
+
+    // Set up the Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            // If the element is intersecting the viewport
+            if (entry.isIntersecting) {
+                // Add the 'is-visible' class to trigger the animation
+                entry.target.classList.add("is-visible");
+                
+                // Optional: Stop observing the element once it's visible
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    // Tell the observer to watch each of the timeline items
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+    </script>
+</body>
+</html>

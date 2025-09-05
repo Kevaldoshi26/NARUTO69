@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="comics.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="image1" style="width: 100%; z-index: 1;" src="https://naruto-official.com/common/header/header_kv_en.webp" alt="">
+    <img class="image2" style="width: 100%; margin-top: -50px; z-index: 0;"  src="https://naruto-official.com/common/bg_naruto_en.webp" alt="">
+    <img class="comicstroke" src="https://naruto-official.com/common/brush/en/comics.svg" alt="">
+
+        <body class="bg-black text-white">
+
+    <!-- Manga Carousel Component -->
+    <main class="container mx-auto px-4 overflow-hidden">
+        <section class="relative carousel-container">
+            <!-- Left Scroll Button -->
+            <button id="scroll-left" class="carousel-button absolute top-1/2 left-0 md:-left-5 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 opacity-0 transition-opacity duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            
+            <!-- Carousel Itself -->
+            <div id="manga-carousel" class="flex items-center space-x-6 overflow-x-auto pb-4 scroll-smooth no-scrollbar">
+                
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48">
+                    <div class="aspect-[2/3] overflow-hidden border-2 border-black mb-3"><img src="https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/en/comics/2022/09/29/RqRC69jCy2qPhxeH/cover.jpg?_=644a3c6e8b17848a6c33e7e85415a28d" alt="NARUTO Vol. 1" class="w-full h-full object-cover  transition-transform duration-300"></div>
+                    <a href="#" class="naruto-button mt-2 w-full text-xs py-2 border-2 border-black color-white">MORE DETAILS<svg style="margin-left: 40px;" width="26" height="7" viewBox="0 0 26 7" class="section2icon"><path d="M16.172,7,26,3.412,16.213,0l-4,2.66H5.692A2.913,2.913,0,0,0,2.912.527,2.942,2.942,0,0,0,0,3.5,2.942,2.942,0,0,0,2.912,6.473,2.913,2.913,0,0,0,5.692,4.34h6.431ZM2.912,4.792a1.293,1.293,0,0,1,0-2.584,1.293,1.293,0,0,1,0,2.584"></path></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-49px sm:w-49">
+                    <div class="h-72 overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+2" alt="NARUTO Vol. 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
+                    <h2 class="font-bold text-sm">NARUTO Vol. 2</h2><p class="text-xs text-gray-400 truncate">The Worst Client</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48">
+                    <div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+3" alt="NARUTO Vol. 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
+                    <h2 class="font-bold text-sm">NARUTO Vol. 3</h2><p class="text-xs text-gray-400 truncate">For the Sake of Dreams...!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48">
+                    <div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+4" alt="NARUTO Vol. 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
+                    <h2 class="font-bold text-sm">NARUTO Vol. 4</h2><p class="text-xs text-gray-400 truncate">The Bridge of the Hero!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48">
+                    <div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+5" alt="NARUTO Vol. 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
+                    <h2 class="font-bold text-sm">NARUTO Vol. 5</h2><p class="text-xs text-gray-400 truncate">The Challengers!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48">
+                    <div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+6" alt="NARUTO Vol. 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div>
+                    <h2 class="font-bold text-sm">NARUTO Vol. 6</h2><p class="text-xs text-gray-400 truncate">Sakura's Decision!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+                </div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48"><div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+7" alt="NARUTO Vol. 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><h2 class="font-bold text-sm">NARUTO Vol. 7</h2><p class="text-xs text-gray-400 truncate">The Path to Follow...!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a></div>
+                <!-- Manga Card Item -->
+                <div class="manga-card group flex-shrink-0 w-40 sm:w-48"><div class="aspect-[2/3] overflow-hidden rounded-lg mb-3"><img src="https://placehold.co/400x600/1a1a1a/ffffff?text=NARUTO\nVol.+8" alt="NARUTO Vol. 8" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"></div><h2 class="font-bold text-sm">NARUTO Vol. 8</h2><p class="text-xs text-gray-400 truncate">Life-and-Death Battles!!</p><a href="#" class="naruto-button mt-2 w-full text-xs py-2 rounded-md">Read now for free<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a></div>
+            </div>
+            
+            <!-- Right Scroll Button -->
+            <button id="scroll-right" class="carousel-button absolute top-1/2 right-0 md:-right-5 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full z-10 opacity-0 transition-opacity duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </button>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById('manga-carousel');
+            const scrollLeftButton = document.getElementById('scroll-left');
+            const scrollRightButton = document.getElementById('scroll-right');
+            const mangaCards = document.querySelectorAll('.manga-card');
+
+            if (!carousel || !scrollLeftButton || !scrollRightButton) return;
+
+            // Function to update which card is 'active' (centered and scaled up)
+            const updateActiveCard = () => {
+                const carouselCenter = carousel.offsetWidth / 2;
+                let minDistance = Infinity;
+                let activeCard = null;
+
+                mangaCards.forEach(card => {
+                    const cardRect = card.getBoundingClientRect();
+                    const carouselRect = carousel.getBoundingClientRect();
+                    // Calculate the center of the card relative to the carousel's left edge
+                    const cardCenter = (cardRect.left - carouselRect.left) + (cardRect.width / 2);
+                    const distance = Math.abs(carouselCenter - cardCenter);
+
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        activeCard = card;
+                    }
+                });
+
+                // Remove 'is-active' from all cards and add it to the new active one
+                mangaCards.forEach(card => card.classList.remove('is-active'));
+                if (activeCard) {
+                    activeCard.classList.add('is-active');
+                }
+            };
+
+            // Scroll to the first item on load to ensure it's centered
+            if (mangaCards.length > 0) {
+                const firstCard = mangaCards[0];
+                const scrollPos = firstCard.offsetLeft - (carousel.offsetWidth / 2) + (firstCard.offsetWidth / 2);
+                carousel.scrollTo({ left: scrollPos, behavior: 'instant' });
+            }
+
+            // Update active card on scroll
+            carousel.addEventListener('scroll', updateActiveCard);
+            
+            // Initial check
+            // Use a timeout to ensure the initial scroll has completed
+            setTimeout(updateActiveCard, 100);
+
+            // Button click handlers
+            const scrollToCard = (direction) => {
+                const activeCard = document.querySelector('.manga-card.is-active');
+                let targetCard = null;
+                if (direction === 'next') {
+                    targetCard = activeCard ? activeCard.nextElementSibling : mangaCards[0];
+                } else {
+                    targetCard = activeCard ? activeCard.previousElementSibling : mangaCards[mangaCards.length - 1];
+                }
+
+                if (targetCard && targetCard.classList.contains('manga-card')) {
+                    const scrollPosition = targetCard.offsetLeft - (carousel.offsetWidth / 2) + (targetCard.offsetWidth / 2);
+                    carousel.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+                }
+            };
+
+            scrollRightButton.addEventListener('click', () => scrollToCard('next'));
+            scrollLeftButton.addEventListener('click', () => scrollToCard('prev'));
+        });
+    </script>
+
+</body>
+</html>

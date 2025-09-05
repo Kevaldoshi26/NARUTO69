@@ -1,0 +1,274 @@
+body {
+    background-color: rgb(18, 12, 12);
+    overflow: hidden;
+}
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+.sakura-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* behind navbar */
+  width: 600px; /* adjust size as needed */
+  height: auto;
+  pointer-events: none; /* so it doesn't block clicks */
+}
+nav {
+  position: relative;
+  z-index: 1;
+}
+.ellipse {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100vw;
+  height: 140vh;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+  transform: scale(0.3); /* Start small */
+  animation: ellipse-grow 2s cubic-bezier(0.23,1,0.32,1) forwards;
+}
+
+@keyframes ellipse-grow {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes size {
+  from {
+    width: 50vw; /* Start at full width */
+    height: 70vh; /* Start at full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  to {
+    width: 100vw; /* End at full width */
+    height: 140vh; /* End at full height */
+  }
+  
+}
+nav{
+    z-index: 1;
+}
+.sakura-2 {
+    position: absolute;
+    top: -50px;
+    left: 32%;
+    z-index: 5; /* behind navbar */
+    width: 600px; /* adjust size as needed */
+    height: auto;
+    pointer-events: none; /* so it doesn't block clicks */
+}
+.sakura-3 {
+  position: absolute;
+  top: 10%;
+  left: 52%;
+  z-index: 0; /* behind navbar */
+  width: 900px; /* adjust size as needed */
+  height: auto;
+  pointer-events: none; /* so it doesn't block clicks */
+  animation-name: sakura3;
+  animation-timing-function: ease;
+  animation-duration: 3s; 
+  animation-iteration-count: one;
+}
+@keyframes sakura3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.texthead{
+    position: absolute;
+    top: 262px; /* Adjusted for visibility */
+    left: 15%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: #E8CAF6;
+    text-align: center;
+    z-index: 10; /* Above everything else */
+    pointer-events: none;
+}
+.text-stack {
+  top: 560px;         /* Your chosen Y-position */
+  left: -520px;       /* Your chosen X-position */
+  width: 100%;
+  z-index: 10;        /* Above everything else */
+  pointer-events: none;
+  animation-name: text;
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: ease;
+}
+@keyframes text {
+  from {
+    top: 560px; /* Start position */ /* Start invisible */
+  }
+  to {
+    top: 210px; /* End position *//* End visible */
+  }
+  
+}
+
+.text,
+.text-transparent {
+  font-size: 13rem;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+
+.text {
+  color: #D4BD57;
+  z-index: 1;
+  top: 210px;
+  text-shadow: 0 0 10px #f87060;
+  animation: text;
+  
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: ease;
+}
+
+.text-transparent {
+  color: transparent;
+  -webkit-text-stroke: 2px #A86422;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 6;
+  font-family: sans-serif;
+  width: 100%;
+  animation: transparent;
+  animation-duration: 2s;
+  animation-timing-function: ease ;
+  animation-iteration-count: one;
+}
+@keyframes transparent {
+  from {
+    top: 560px;
+  }
+  to {
+    top: 0px;
+  }
+}
+.text-surname {
+  font-size: 3.2rem;
+  font-weight: 900;
+  width: 100%;
+  line-height: 1;
+  color: #D4BD57;
+  z-index: 20; /* higher than .sakura-2 */
+  position: relative;
+  word-spacing: 70px;
+  top: -20px; /* Adjusted position for surname */
+  left: 380px;
+  text-shadow: #F9BCC3 0px 0px 10px;
+  margin-left: 100px;
+  font-family: sans-serif;
+}
+.rectangle {
+  animation-name: side;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: one;
+}
+@keyframes side {
+  from {
+    left: 100%; /* Start from the left */
+  }
+  to {
+    left: 74%; /* Move to the right */
+  }
+}
+.rectangle {
+  position: absolute;
+  top: 90px;
+  left: 74%; /* Full height */
+  z-index: 10; /* Behind everything else */
+  height: 17%;
+}
+.sidehead {
+  position: absolute;
+  top: 79px; /* Adjusted for spacing */
+  left: 1150px; /* Adjusted for alignment */
+  font-size: 1rem;
+  height: 1vh;
+  width: 20vw;
+  color: #F9BCC3;
+  font-weight: bold;
+  text-align: center;
+  text-align: left;
+  z-index: 20; /* Above everything else */
+  animation-name: sidehead;
+  animation-timing-function: ease;
+  animation-duration: 2.5s;
+  animation-iteration-count: one;
+}
+@keyframes sidehead {
+  from {
+    left: 100%; /* Start from the left */
+  }
+  to {
+    left: 1150px; /* Move to the right */
+  }
+}
+.sidedescribe {
+  position: absolute;
+  top: 105px; /* Adjusted for spacing */
+  left: 1150px; /* Adjusted for alignment */
+  font-size: 0.8rem;
+  width: 20vw;
+  color: #ffffff;
+  text-align: left;
+  z-index: 20; /* Above everything else */
+  animation-name: sidedescribe;
+  animation-timing-function: ease;
+  animation-duration: 2.5s;
+  animation-iteration-count: one;
+}
+@keyframes sidedescribe {
+  from {
+    left: 100%; /* Start from the left */
+  }
+  to {
+    left: 1150px; /* Move to the right */
+  }
+}
+.Group {
+  position: absolute;
+  top: 370px;
+  left: 540px; /* Adjusted for alignment */
+  z-index: 25; /* Behind everything else */
+    cursor: grab;
+  transition: top 0.3s ease;
+}
+.sakura-2 {
+  cursor: grabbing;
+  animation-name: drag;
+  animation-duration: 2s;
+  animation-iteration-count: one;
+  animation-timing-function: ease;
+}
+
+@keyframes drag {
+  from {
+    top: -120%;
+  }
+  to {
+    top: -50px;
+  }
+  
+}

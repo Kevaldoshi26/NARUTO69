@@ -1,0 +1,429 @@
+body {
+    background-color: rgb(3, 69, 69);
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+main {
+  background-image: url("https://i.pinimg.com/736x/4c/93/30/4c9330c19671638c6e912951df07005c.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
+}
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  gap: 50px;
+}
+.logo {
+  position: sticky;
+  color: #f1faee;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 50PX;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  margin-top: 20px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+  margin-right: 40px;
+  font-family: cursive;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #f1faee;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #a8dadc;
+}
+.container {
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: flex-end;/* move to right */
+  height: 100vh;            /* full viewport height, adjust as needed */
+  margin: 0;                /* remove large margin-left */
+  margin-top: -60px; 
+  margin-right: 250px;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 600px;
+  color: white;
+  margin-top: -350px;
+}
+.head {
+  font-size: 50px;
+  color: white;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  margin-top: -200px;
+  margin-left: 50px;
+  z-index: 5;
+}
+.text-container {
+  width: 1000px;
+  border: 2px solid ;
+  border-color: transparent;
+  border-radius: 12px;    
+  color: white;
+  backdrop-filter: blur(5px);
+  height: 70vh;
+  z-index: 1;
+  margin-top: 100px;
+}
+.text-description {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 600px;
+  color: white;
+}
+.list {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+.list-member {
+  margin-left: 575px;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.akatsuki {
+  border-radius: 5%;
+  margin-left: 30px;
+  margin-top: 21px;
+  width: 540px;
+  height: 350px;
+  z-index: 2;
+}
+img.display {
+  display: block;
+}
+.arrow-right {
+  position: absolute;
+  top: 90%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 7;
+}
+
+.pain {
+  background: linear-gradient(135deg, #1a0000, #4d0000);
+  z-index: 10;
+  height: 690px;
+}
+.pain-image {
+  height: 690px;
+  margin-left: 970px;
+}
+.pain-image {
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), opacity 1s;
+  transform: translateX(200px); /* Start off to the right */
+  opacity: 0;
+}
+.pain-image.visible {
+  transform: translateX(0); /* Slide to original position */
+  opacity: 1;
+}
+.pain-head {
+  color: #e6e6e6;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  margin-left: 100px;
+  margin-top: -650px;
+  font-size: 50px;
+}
+.pain-description {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 450px;
+  margin-top: -200px;
+  width: 500px;
+}
+.pain-description2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 450px;
+  margin-top: 20px;
+  width: 500px;
+}
+.pain-text:nth-child(3) {
+  margin-top: 400px;
+  font-size: 18px;
+}
+.pain-description-image {
+  width: 300px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.pain-description3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 100px;
+  margin-top: 20px;
+  width: 850px;
+}
+
+.konan {
+  background: linear-gradient(135deg, #121327 0%, #432c5c 100%);
+  z-index: 10;
+  height: 690px;
+}
+.konan-image {
+  height: 690px;
+  margin-left: 100px;
+}
+.konan-head {
+  color: #e6e6e6;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+  margin-left: 550px;
+  margin-top: -650px;
+  font-size: 50px;
+}
+.konan-description {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 560px;
+  margin-top: 40px;
+  width: 900px;
+}
+.konan-description2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 560px;
+  margin-top: 20px;
+  width: 900px;
+}
+
+/* Contact Page */
+.first-head {
+  margin-left: 120px;
+  margin-top: 50px;
+  font-family: sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 50px;
+}
+.first-head-description {
+  margin-left: 120px;
+  margin-top: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  font-size: 1.2rem;
+}
+.contact-form {
+  margin-left: 850px;
+  margin-top: -85px;
+  gap: 20px;
+}
+.contact-form input[type="email"] {
+  padding: 15px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.contact-form button {
+  padding: 13px 30px;
+  background-color: transparent;
+  color: #2b2b2b;
+  border-radius: 5px;
+  border-color: #d4d4d4;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.contact-form button:hover {
+  background-color: #d4d4d4;
+  color: #2b2b2b;
+}
+.privacy-link {
+  margin-left: 850px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  word-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #2b2b2b;
+  line-height: 5px;
+}
+.privacy-link a {
+  color: #2b2b2b;
+}
+.naruto-about-section-image {
+  width: 200px;
+  height: 200px;
+  margin-left: 100px;
+  margin-top: -10px;
+}
+.about {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  margin-left: 120px;
+  margin-top: -35px;
+}
+.about-description {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  margin-left: 120px;
+  margin-top: -20px;
+  width: 350px;
+}
+.follow {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  margin-left: 120px;
+  margin-top: 25px;
+}
+.instagram-bg {
+  display: inline-block;
+  background-color: #d4d4d4;
+  border-radius: 50%;        /* Optional: makes it circular */
+  padding: 15px;
+  margin-left: 120px;
+  margin-top: 20px;
+
+}
+.instagram {
+  width: 20px;
+  height: 20px;
+  background: none; /* Remove background from img */
+  border: none;     /* Remove border from img */
+  display: block;
+}
+.facebook-bg {
+  display: inline-block;
+  background-color: #d4d4d4;
+  border-radius: 50%;        /* Optional: makes it circular */
+  padding: 15px;
+  margin-left: 20px;         /* Adjusted for spacing */
+  margin-top: -20px;         /* Adjusted for alignment */
+}
+.facebook {
+  width: 20px;
+  height: 20px;
+  background: none; /* Remove background from img */
+  border: none;     /* Remove border from img */
+  display: block;
+}
+.twitter-bg {
+  display: inline-block;
+  background-color: #d4d4d4;
+  border-radius: 50%;        /* Optional: makes it circular */
+  padding: 15px;
+  margin-left: 20px;         /* Adjusted for spacing */
+  margin-top: -20px;         /* Adjusted for alignment */
+}
+.twitter {
+  width: 20px;
+  height: 20px;
+  background: none; /* Remove background from img */
+  border: none;     /* Remove border from img */
+  display: block;
+}
+.whatsapp-bg {
+  display: inline-block;
+  background-color: #d4d4d4;
+  border-radius: 50%;        /* Optional: makes it circular */
+  padding: 15px;
+  margin-left: 20px;         /* Adjusted for spacing */
+  margin-top: -20px;         /* Adjusted for alignment */
+}
+.whatsapp {
+  width: 20px;
+  height: 20px;
+  background: none; /* Remove background from img */
+  border: none;     /* Remove border from img */
+  display: block;
+}
+
+.base-img {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure it stays behind other content */
+}
+
+.mini-card {
+  width: 180px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #121327;
+  color: #f87060;
+}
+
+.image-container {
+  position: relative;
+}
+
+.mini-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.leaf-logo {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 29px;
+  height: 29px;
+}
+.mini-info {
+  padding: 10px;
+}
+.mini-name {
+  font-size: 24px;
+  margin: 6px 0 4px;
+  font-weight: 600;
+}
+
+.mini-verified {
+  color: #00cc66;
+  font-size: 12px;
+}
+
+.mini-bio {
+  font-size: 12px;
+  font-family: edu NSW ACT Hand Pre, cursive;
+}
+.cards-row {
+  display: flex;
+  gap: 60px;           /* space between cards */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Optional: Responsive for small screens */
+@media (max-width: 982px) {
+  .cards-row {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
