@@ -1077,14 +1077,14 @@ a:-webkit-any-link {
 /* ======================================= */
 /* Tablet & Small Laptop Styles (max-width: 1024px) */
 /* ======================================= */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .section-2 {
         /* Reduce min-height for less vertical space on tablets */
         min-height: 1800px;
     }
 
     .section2 {
-        top: 19%;
+        top: 13.5%;
         margin-left: 20px;
         width: 200px; 
         height: 250px;
@@ -1100,15 +1100,14 @@ a:-webkit-any-link {
 
     .newsstroke {
         /* Adjust position, maybe center it or use a percentage left */
-        top: 180px;
+        top: 100px;
         left: 7%;
         width: 120px;
-
     }
 
     .css-v5m5mf {
         /* Move SPECIAL button down and left to prevent overlap/collision */
-        top: 1500px;
+        top: 1420px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -1117,21 +1116,21 @@ a:-webkit-any-link {
     .css-19b4s3l,
     .css-19b4s3l-2 {
         position: relative; /* Use relative or remove position to flow naturally */
-        top: 500px;
+        top: 400px;
         left: 25px;
         width: 50%; /* Make them wider to fill the screen */
         height: auto;
         font-size: x-small;
     }
     .css-19b4s3l-2 {
-        left: 250px; /* Reset left for the second container */
-        margin-top: -220px; /* Add space between the two containers */
+        left: 170px; /* Reset left for the second container */
+        margin-top: -215px; /* Add space between the two containers */
     }
 
     /* Stack the content of the card section */
     .card-section {
         position: relative;
-        top: 800px;
+        top: 650px;
         left: auto;
         flex-direction: column; /* Stack cards vertically */
         align-items: center; /* Center stacked cards */
@@ -1177,3 +1176,6 @@ a:-webkit-any-link {
         width: 150px;
     }
 }
+
+
+
