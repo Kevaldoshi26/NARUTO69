@@ -1084,7 +1084,7 @@ a:-webkit-any-link {
     }
 
     .section2 {
-        top: 13.5%;
+        top: 14.5%;
         margin-left: 20px;
         width: 200px; 
         height: 250px;
@@ -1100,7 +1100,7 @@ a:-webkit-any-link {
 
     .newsstroke {
         /* Adjust position, maybe center it or use a percentage left */
-        top: 100px;
+        top: 120px;
         left: 7%;
         width: 120px;
     }
@@ -1123,8 +1123,8 @@ a:-webkit-any-link {
         font-size: x-small;
     }
     .css-19b4s3l-2 {
-        left: 170px; /* Reset left for the second container */
-        margin-top: -215px; /* Add space between the two containers */
+        left: 210px; /* Reset left for the second container */
+        margin-top: -209px; /* Add space between the two containers */
     }
 
     /* Stack the content of the card section */
@@ -1175,6 +1175,34 @@ a:-webkit-any-link {
         margin-top: 20px;
         width: 150px;
     }
+    
+.css-72j8ho {
+    font-family: var(--comic-impact-font);
+    font-size: 11.11px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.css-1r94il2 {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+.css-72j8ho {
+  background-color: black;
+  color: snow;
+  border-radius: 50px;
+ width: 70px;
+ font-size: small;
+}
+.css-72j8ho:not(:lang(ja)) {
+    font-size: 14px;
+}
 }
 
 @media (max-width: 576px) {
@@ -1335,9 +1363,109 @@ a:-webkit-any-link {
         margin-left: 0;
     }
 }
+@media (max-width: 576px) {
+    .section-4 {
+        /* Adjust for smaller screens */
+        padding: 10px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
 
+    .section4 {
+        /* Adjust ornamental image size and position */
+        width: 200px; 
+        height: auto;
+        margin-top: -30px;
+        margin-left: 100px; 
+        display: block; /* Ensure it takes up space */
+    }
+    
+    .newsstroke4 {
+        /* Adjust ornamental image position */
+        margin-left: 50px; 
+        width: 150px;
+        height: auto;
+    }
 
+    .sectiontop {
+        /* Change to a single-column layout */
+        flex-direction: column;
+        gap: 20px; 
+        margin-top: 20px;
+    }
 
+    .card4, .card4l {
+        /* Make cards full width and auto height, reducing overall size */
+        width: 100%; 
+        max-width: 350px; /* Constraint for very narrow screens */
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    }
+
+    .card4 img, .card4l img {
+        /* Image fluid within the card */
+        width: 100%;
+        height: auto;
+        max-height: 200px; /* Cap image height */
+    }
+    
+    .card-title4, .card-title4l {
+        /* Text size and alignment adjustments */
+        width: 100%; 
+        font-size: 16px; 
+        padding: 0 10px;
+    }
+
+    .card-divider4, .card-divider4l {
+        /* Divider full width */
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .card-footer4, .card-footer4l {
+        /* Adjust padding */
+        padding: 5px 10px 5px;
+    }
+
+    .card-section4 {
+        /* Adjust multi-card section to stack vertically */
+        flex-direction: column;
+        gap: 20px; 
+        position: static; /* Remove absolute positioning */
+        margin: 20px auto; /* Center the section with some vertical margin */
+        align-items: center;
+    }
+    
+    .section4button {
+        /* Adjust button to be centered and full width (or nearly so) */
+        width: 90%; 
+        max-width: 320px; 
+        margin: 30px auto 20px; /* Center with margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; /* Maintain relative flow */
+        left: auto;
+        right: auto;
+        line-height: normal; /* Ensure text fits */
+    }
+    
+    .section4icon {
+        /* Re-position icon relative to the button */
+        position: static; 
+        margin-left: 10px; 
+    }
+    
+    .frog4 {
+        /* Adjust ornamental image size and position */
+        width: 100px; 
+        margin: 20px auto; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 
